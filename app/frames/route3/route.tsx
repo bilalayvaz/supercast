@@ -7,21 +7,22 @@ export const POST = frames(async () => {
     image: (
       <div tw="flex">
         <img 
-          src="/images/specializedFeed.png" 
-          alt="schedule"
-          style={{ width: '100%', height: 'auto' }}
+          src="https://r.resimlink.com/ZBqv-.png" 
+          alt="specializedFeed"
+          width={1152} // Genişlik 444px
+          height={1152} // Yükseklik 444px
         />
       </div>
     ),
     buttons: [
-      <Button action="post" target="/">
-        Go to initial route
+      <Button action="post" target="/route2">
+        ← Back
       </Button>,
       <Button
         action="post"
-        target={{ pathname: "/route1", query: { foo: "baz" } }}
+        target={{ pathname: "/route4", query: { foo: "baz" } }}
       >
-        Go to route 1
+        → Next
       </Button>,
     ],
   };
